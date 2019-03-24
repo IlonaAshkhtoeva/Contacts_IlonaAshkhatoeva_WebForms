@@ -58,7 +58,7 @@
             var grid = App.ContactStore, store = grid.getStore(), fn = function () { console.log("fn"); this.allowEditAll = false; };
 
             grid.editingPlugin.cancelEdit();
-
+     
             store.getSorters().removeAll(); 
             grid.getView().headerCt.setSortState();
 
@@ -80,6 +80,7 @@
             }
         };
 
+        // შემოწმება რომ დავაკორექტიროთ მარტო ჩვენი დამატებულები // phantom რაც ახალი დამატებულია
         var onBeforeEdit = function (rowEditingPlugin, e) {
             var rowEditor = this.getEditor();
 
@@ -182,6 +183,7 @@
             <Listeners>
                 <SelectionChange Handler="App.btnDeleteContact.setDisabled(!selected.length);" />
             </Listeners> 
+            <%--თუ ვდგავართ გრიდზე მაშინ რომ იყოს აქტიური დელეტეს ღილარი--%>
           <%-- Main grid panel with contact --%>
         </ext:GridPanel>     
        </form> 

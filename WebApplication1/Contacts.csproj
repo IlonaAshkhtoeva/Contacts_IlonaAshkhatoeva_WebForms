@@ -94,8 +94,24 @@
     <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Form_HasOneAssociation.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="ContactsCRUD.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsCRUD.aspx.cs">
+      <DependentUpon>ContactsCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactsCRUD.aspx.designer.cs">
+      <DependentUpon>ContactsCRUD.aspx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\Contact.cs" />
     <Compile Include="App_Readme\ContactInfo.aspx.cs">
       <DependentUpon>ContactInfo.aspx</DependentUpon>
@@ -132,6 +148,9 @@
     <Content Include="App_Readme\Ext.NET\README.md" />
     <Content Include="App_Readme\Ext.NET\LICENSE" />
     <Content Include="App_Readme\Ext.NET\CHANGELOG.md" />
+    <Content Include="contacts.json" />
+    <Content Include="orders.json" />
+    <Content Include="customers.json" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
